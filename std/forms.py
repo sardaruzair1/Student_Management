@@ -10,5 +10,5 @@ class StudentsForm(ModelForm):
         widgets={
             'name':forms.TextInput(attrs={'class':'form-control'}),
             'email':forms.TextInput(attrs={'class':'form-control'}),
-            'password':forms.PasswordInput(attrs={'class':'form-control'})
+            'password':forms.PasswordInput(attrs={'class':'form-control'},render_value=True)
         }
